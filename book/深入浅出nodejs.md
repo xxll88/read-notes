@@ -397,6 +397,9 @@ Content-Length: 18231
 因此，**server 端可通过判断`Content-Type`是否是`multipart/form-data`来处理附件上传**。书中介绍了用 [formidable](https://www.npmjs.com/package/formidable) 插件来处理，formidable 能接收文件并写入到系统的临时文件夹，使用方式可参考其文档。
 
 ### 路由解析
+   :PROPERTIES:
+   :CUSTOM_ID: 5f22b6e5-69a7-443c-839d-fad370c2f571
+   :END:
 
 路由解析是一个 web server 基本功能，nodejs 提供了 [url](http://nodejs.cn/api/url.html) 和 [querystring](http://nodejs.cn/api/querystring.html) 两个 API 来处理路由。常用的框架 express 和 koa 也都有很方便的路由处理接口，而且是基本功能。基本的处理逻辑比较简单，就此略过。
 
@@ -423,7 +426,6 @@ GET    /user/jack
 - 通过 url 设计资源
 - method 定义资源的操作
 - 通过`Accept`决定资源的类型
-
 ### 中间件
 
 体验中间件的最好方式就是立马做一个 express 和 koa 的例子，代码格式如
